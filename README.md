@@ -1,6 +1,10 @@
 > [!TIP]
 > This fork allows fragment shader usage.
 
+https://github.com/user-attachments/assets/292fde01-b1ab-4218-bcf9-77f7d9e53e4a
+
+# hyprlock fragment shader
+
 Add to `hyprlock.conf`
 
 ```ini
