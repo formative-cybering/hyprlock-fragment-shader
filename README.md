@@ -1,3 +1,31 @@
+> [!TIP]
+> This fork allows fragment shader usage.
+
+Add to `hyprlock.conf`
+
+```ini
+shader {
+  frag_path = /path/to/shader.frag
+}
+```
+
+Build with:
+
+```sh
+cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -S . -B ./build
+cmake --build ./build --config Release --target hyprlock -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+```
+
+Move `hyprlock` to `/usr/local/bin/hyprlock` so it won't conflict with your system-wide hyprlock.
+
+```sh
+sudo mv ./build/hyprlock /usr/local/bin/
+```
+
+Example shader: https://gist.github.com/mashaal/0c352c1d92767de0e4b804451c29f5ae
+
+---
+
 # hyprlock
 Hyprland's simple, yet multi-threaded and GPU-accelerated screen locking utility.
 
