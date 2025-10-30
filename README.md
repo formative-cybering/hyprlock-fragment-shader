@@ -13,6 +13,8 @@ shader {
 }
 ```
 
+This adds a new layer to hyprlock, works well with a transparent background to make some pretty neat looking overlays as your existing background config should still remain intact.
+
 Build with:
 
 ```sh
